@@ -1,0 +1,245 @@
+@media (max-width: 1220px) {
+
+    /* header */
+
+    /* .header__nav {
+        display: none;
+    } */
+
+    .burger {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 23px;
+    }
+
+    .burger__line {
+        position: absolute;
+        left: 0;
+        bottom: calc((100% - 3px) / 2);
+        height: 3px;
+        width: 30px;
+        background-color: white;
+    }
+
+    .burger__line:nth-child(1) {
+        top: 0;
+    }
+
+    .burger__line:nth-child(3) {
+        bottom: 0;
+    }
+
+    .burger--active .burger__line:nth-child(2) {
+        display: none;
+    }
+
+    .burger--active .burger__line:nth-child(1) {
+        left: 0;
+        top: 49%;
+        transform: rotate(45deg);
+        transform-origin: center;
+        transition: transform 0.1s ease-in-out, left 0.1s ease-in-out,
+            top 0.1s ease-in-out;
+    }
+
+    .burger--active .burger__line:nth-child(3) {
+        bottom: auto;
+        left: 0;
+        top: 49%;
+        transform: rotate(-45deg);
+        transform-origin: center;
+        transition: transform 0.1s ease-in-out, left 0.1s ease-in-out,
+            top 0.1s ease-in-out;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .header__nav {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        z-index: 3;
+        width: 30%;
+        min-width: 240px;
+        height: 100vh;
+        padding: 20px;
+        box-shadow: 0 0 5px #888;
+        background-color: black;
+        visibility: hidden;
+        transform: translateX(-100%);
+        transition: visibility 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .menu__item {
+        margin-bottom: 10px;
+    }
+
+    .header__nav--active {
+        visibility: visible;
+        transform: none;
+    }
+
+    .basket {
+        margin-left: auto;
+        margin-right: 32px;
+    }
+
+    .basket {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .header__logo {
+        margin-right: 0;
+    }
+
+    /* hero */
+
+    .hero__title {
+        max-width: 653px;
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 112px;
+    }
+
+    .hero__desc {
+        max-width: 539px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* hero */
+
+    .hero__img {
+        display: none;
+    }
+
+    .hero__desc {
+        margin-bottom: 68px;
+    }
+
+    /* discount */
+
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
+
+    .product__img {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    /* hero */
+
+    .hero__content {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero__title {
+        font-size: 60px;
+        line-height: 59px;
+    }
+
+    .hero__desc {
+        margin-bottom: 26px;
+        font-size: 21px;
+        line-height: 24px;
+    }
+
+    .hero__subtitle-footnote {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .hero__desc-footnote {
+        font-size: 18px;
+        line-height: 19px;
+    }
+
+    /* discount */
+
+    .discount__content {
+        padding: 40px 0;
+    }
+
+    .discount__title {
+        margin-bottom: 33px;
+        font-size: 33px;
+        line-height: 57px;
+    }
+
+    .offer__old-price {
+        margin-right: 50px;
+        font-size: 31px;
+        line-height: 43px;
+    }
+
+    .offer__new-price {
+        font-size: 44px;
+        line-height: 57px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    /* hero */
+
+    .hero__title {
+        margin-bottom: 16px;
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .hero__desc {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .hero__subtitle-footnote {
+        font-size: 22px;
+        line-height: 24px;
+    }
+
+    .hero__desc-footnote {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    /* discount */
+
+    .discount__title {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    .discount__price {
+        margin-bottom: 40px;
+    }
+
+    .offer__old-price {
+        font-size: 28px;
+    }
+
+    .offer__new-price {
+        font-size: 40px;
+    }
+}
